@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Study Discord Server</title>
+    <style>
+      /* Modern Neon-inspired CSS */
+      body {
+        background-color: #000;
+        color: #fff;
+        font-family: "Courier New", monospace;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.8
+        ); /* Dark Background with Transparency */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .box {
+        flex: 1;
+        padding: 20px;
+      }
+      header {
+        text-align: center;
+        padding: 20px;
+      }
+      h1,
+      h2,
+      h3 {
+        font-size: 2rem;
+        color: #00ffcc; /* Neon Cyan */
+      }
+      a {
+        color: #ff00cc; /* Neon Pink */
+        text-decoration: none;
+      }
+      section {
+        margin: 20px 0;
+        padding: 20px;
+        border: 2px solid #00ffcc; /* Neon Cyan */
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.6
+        ); /* Semi-transparent Dark Background */
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+      .discord-link {
+        background-color: #e9edf9; /* Discord Blurple */
+        color: #1d2555;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      .discord-icon {
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+      .language-button {
+        background-color: #1a2135; /* Neon Pink */
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .illustration {
+        flex: 1;
+        padding: 20px;
+      }
+      .illustration img {
+        max-width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div >
+      <div >
+        <header>
+          <h1>大学の勉強 -'Let's Study Together'</h1>
+        
+          <button id="toggle-language" class="language-button">
+            Switch Language
+          </button>
+        </header>
+
+        <section class="container">
+          <h2 class>About Our Server</h2>
+          <p class="english-content">
+            The College Study Discord Server is a vibrant community where
+            students from various majors gather to study, collaborate, and share
+            knowledge. Join our community and let's support each other in our
+            academic journeys.
+          </p>
+          <p class="japanese-content" style="display: none">
+            大学の勉強 Discord
+            サーバーは、さまざまな専攻の学生が集まり、共に勉強し、知識を共有する場所です。私たちのコミュニティに参加し、学業を支え合いましょう。
+          </p>
+          <div class="illustration">
+        <img src="illu1.jpg"  alt="Illustration" />
+      </div>
+    
+        <p class="english-content">
+          Joining our server is easy. Simply click the Discord icon below to
+          join:
+        </p>
+        <p class="japanese-content" style="display: none">
+          サーバーへの参加は簡単です。以下の Discord
+          アイコンをクリックし、サーバーに参加しましょう：
+        </p>
+        <a href="https://discord.gg/sgDHafpx" class="discord-link">
+          <img src="discord.png" alt="Discord Icon" class="discord-icon" />
+          
+          Join the Server
+        </a>
+        <p class="english-content">
+          If you have any questions or need assistance, feel free to reach out
+          to us at
+          <a href="mailto:your.email@example.com">your.email@example.com</a>.
+        </p>
+        <p class="japanese-content" style="display: none">
+          ご質問やお手伝いが必要な場合は、<a
+            href="mailto:your.email@example.com"
+            >your.email@example.com</a
+          >
+          までお気軽にお問い合わせください。
+        </p>
+      </div>
+    </div>
+      
+  </section>
+
+    <!-- Replace "discord-icon.png" with your Discord icon image -->
+    <!-- Make sure to replace "YOUR_DISCORD_INVITE_LINK_HERE" with your actual Discord server invite link -->
+
+    <script>
+      const englishElements = document.querySelectorAll(".english-content");
+      const japaneseElements = document.querySelectorAll(".japanese-content");
+      const languageButton = document.getElementById("toggle-language");
+
+      languageButton.addEventListener("click", () => {
+        englishElements.forEach((element) => {
+          element.style.display =
+            element.style.display === "none" ? "block" : "none";
+        });
+        japaneseElements.forEach((element) => {
+          element.style.display =
+            element.style.display === "none" ? "block" : "none";
+        });
+      });
+    </script>
+  </body>
+</html>
